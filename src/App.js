@@ -1,7 +1,31 @@
 import React from 'react';
+//componnent
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+//page
+import Home from "./pages/Home"
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },
+ 
+
+  // {
+  //   path: "/room/:id",
+  //   element: <RoomDetails/>
+  // }
+])
 
 const App = () => {
-  return <div>react app</div>;
+  return <div>
+    <Header/>
+    <RouterProvider router={router}/>
+    <Footer/>
+  </div>;
 };
 
 export default App;
