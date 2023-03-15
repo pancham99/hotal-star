@@ -6,13 +6,17 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Restaurent from './pages/Restaurent';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
   },
- 
+  {
+    path: "/restaurant",
+    element:<Restaurent />
+  },
 
   // {
   //   path: "/room/:id",
