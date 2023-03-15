@@ -2,6 +2,7 @@ import React from 'react';
 //componnent
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Restaurant from './pages/Restaurant.js';
 //page
 import Home from "./pages/Home"
 
@@ -11,6 +12,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
+  },
+
+  {
+    path: "/restaurant",
+    element: <Restaurant/>
   },
  
 
