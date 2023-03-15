@@ -1,8 +1,13 @@
 import React from 'react'
+import Restomain from '../components/restojm/Restomain'
+import Restoslides from '../components/restojm/Restoslides'
 
 const Restaurant = () => {
   return (
-    <div>Restaurant</div>
+    <>
+   <Restoslides />
+   <Restomain />
+    </>
   )
 }
 
