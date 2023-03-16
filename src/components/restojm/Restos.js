@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 //context
 // import { RoomContext } from '../context/RoomContext';
 import Rdata from "./Rdata"
@@ -8,6 +8,26 @@ import Resto from './Resto';
 
 const Restos = () => {
 const [resto, setResto] = useState(Rdata)
+// const [resto, setResto] = useState([])  // for store all rarry [] in this 
+
+// const fetchData = async () =>{
+//   const data = await fetch ("");
+//   const data = await response.jsn()
+//   setResto(data);
+// } 
+
+// []dependency for infinite  ()function code {} obeject js 
+
+
+// useEffec(()=> {
+//   const fetchData = async () =>{
+//     const data = await fetch ("");
+//     const data = await response.jsn()
+//     setResto(data);
+//   } 
+//   fetchData()
+// },[]) 
+
 console.log(resto, "hhhhhhhhhh")
 
 
@@ -21,10 +41,10 @@ console.log(resto, "hhhhhhhhhh")
       {/* grid */}
       <div className='grid grid-cols-1 max-w-sm mx-auto gap-[30px] lg:grid-cols-3 lg:max-w-none lg:mx-0 '>
         {
-          resto.map((rest) =>{
+          resto.map((jagriti) =>{
             return(
               <>
-             <Resto rest={rest} />
+             <Resto mish={jagriti} />
               </>
             )
           })
