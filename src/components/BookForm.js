@@ -1,6 +1,8 @@
 import React from 'react';
+import AdultsDropdown from './AdultsDropdown';
 import CheckIn from './CheckIn';
 import CheckOut from './CheckOut';
+import KidsDropdown from './KidsDropdown';
 
 const BookForm = () => {
   return (
@@ -16,11 +18,11 @@ const BookForm = () => {
         </div>
 
         <div className='flex-1 border-r'>
-          <CheckOut/>
+          <AdultsDropdown/>
         </div>
 
         <div className='flex-1 border-r'>
-          <CheckOut/>
+          <KidsDropdown/>
         </div>
         <button className='btn btn-primary'>Check now</button>
       </div>
