@@ -8,7 +8,7 @@ const Resto = ({ mish }) => {  //
   console.log(mish, "tpam")
   const { Rate, foodtype, imgsrc, offer, seoffer, sname } = mish // disstructure
   return (
-    <div className='bg-white shadow-2xl mb-4 min-h-[300px] group'>
+    <div className='bg-white p-2 min-h-[300px] group'>
 
       <div className='overflow-hidden'>
         <img className='group-hover:scale-110 transition-all durration-300 w-full' src={imgsrc} alt="#" />
@@ -29,8 +29,8 @@ const Resto = ({ mish }) => {  //
           </div>
         <h2 className='text-gray-400'>{foodtype}</h2>
         <div className='flex gap-2 py-2'>
-        <h3 className='resto_offer bg-green-600  text-white rounded-md p-1 text-center capitalize  w-[20vh] items-center text-sm'>{offer} </h3>
-        <span className='card_seoffer font-semibold text-md font-mono	'> {seoffer}</span>
+        <h3 className='resto_offer bg-green-600 text-xs text-white rounded-md p-1 text-center capitalize  w-[20vh] items-center '>{offer} </h3>
+        <span className='card_seoffer font-semibold text-xs font-mono	'> {seoffer}</span>
         </div>
       </div>
     </div>
