@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // import { RoomContext } from '../context/RoomContext';
 import Rdata from "./Rdata"
 import Resto from './Resto';
+import Sdata from './Sdata';
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -10,13 +11,19 @@ import "react-multi-carousel/lib/styles.css";
 
 
 const Restos = () => {
+  //  const [rest, setRest] = useState(Sdata)
   const [resto, setResto] = useState(Rdata)
+  console.log(resto);
+  const dataFilter = Rdata.filter((sname)=>{
+return sname.categry === 'Online delivery'|| sname.categry === 'Outdor system'
+  })
+  console.log(dataFilter);
 
 
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 4,
       slidesToSlide: 3 // optional, default to 1.
       
     },
@@ -54,7 +61,7 @@ const Restos = () => {
   console.log(resto, "hhhhhhhhhh")
 
 
-  return <section className=' py-24'>
+  return <section className=' py-24 bg-gray-200'>
     <div className='container mx-auto lg:px-0'>
 
       <div className='text-center'>
@@ -79,6 +86,20 @@ const Restos = () => {
             })
           }
         </Carousel>
+        <div className='pt-[10vh]'>
+        <Carousel responsive={responsive}  >
+          {
+            dataFilter.map((jagriti) => {
+              return (
+                <>
+                  <Resto mish={jagriti} />
+
+                </>
+              )
+            })
+          }
+        </Carousel>
+        </div>
       </div>
 
     </div>

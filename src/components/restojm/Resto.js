@@ -8,7 +8,7 @@ const Resto = ({ mish }) => {  //
   console.log(mish, "tpam")
   const { Rate, foodtype, imgsrc, offer, seoffer, sname } = mish // disstructure
   return (
-    <div className='bg-white p-2 min-h-[300px] group'>
+    <div className=' bg-white p-2 min-h-[300px] group'>
 
       <div className='overflow-hidden'>
         <img className='group-hover:scale-110 transition-all durration-300 w-full' src={imgsrc} alt="#" />

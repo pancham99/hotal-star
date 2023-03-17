@@ -1,5 +1,5 @@
 import React from 'react'
-const Rdata=[
+const Sdata=[
     { 
         id:1,
         sname:'Kiyan, The Roseate',
@@ -8,7 +8,6 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/close-up-smiley-friends-restaurant_23-2148965380.jpg?w=900&t=st=1678871241~exp=1678871841~hmac=66100e77b0ef3ebb3bae3d5724d0df8bfa7aaf1ebbf11f164d8187665ba153b6',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'₹562',
-        categry: 'Online delivery'
     },
 
     {
@@ -19,7 +18,6 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/premium-photo/group-friends-eating-restaurant_23-2148006646.jpg?w=900',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'₹320',
-        categry: 'Online delivery'
     },
 
     {
@@ -30,7 +28,6 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/happy-waiter-serving-food-group-cheerful-friends-pub_637285-12525.jpg?w=900&t=st=1678997761~exp=1678998361~hmac=df72c9e10d2174fd37431ab455bbfc82aca51220e9d670be5c819222e35fad16',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'₹699',
-        categry: 'Online delivery'
     },
     {
         id:4,
@@ -50,7 +47,6 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/side-lamb-ragout-with-fried-onion-carrot-tomato-sauce-greens-vegetable-salad-table_141793-4744.jpg?w=900&t=st=1678997399~exp=1678997999~hmac=ae604cd7c0b4915e172f59ac99e66ec10932ce69eb8b8d516637bd187279a640',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'₹432',
-        categry: 'Outdor system'
     },
 
     {
@@ -71,7 +67,6 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/young-woman-eating-croissants-cafe_1303-20408.jpg?w=900&t=st=1678993034~exp=1678993634~hmac=7fa57b63c8fe3b55c4af33772e359ac4c4a6f83e44c6cfa0eb21d2686c0ea3fb',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'₹752',
-        categry: 'Outdor system'
     },
     {
         id:8,
@@ -104,4 +99,4 @@ const Rdata=[
 ];
 
 
-export default Rdata ; 
+export default Sdata ; 
