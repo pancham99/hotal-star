@@ -10,20 +10,19 @@ const RoomProvider = ({ children }) => {
   const [rooms, setRooms] = useState(roomData);
   const [adults, setAdults] = useState("1 Adults")
   const [kids, setKids] = useState("0 kids")
+  const [total, setTotal] = useState(0);
 
-  const [topers, setTopers] = useState(0);
 
-  
   useEffect(() => {
-    setTopers(Number(adults[0]) + Number(kids[0]))
-  });
+    setTotal(Number(adults[0]) + Number(kids[0]))
+  },[])
 
   const handleClick = (e) => {
     e.preventDefault()
-const newRoom = roomData.filter((room)=>{
-  return topers <= room.maxPerson 
-})
-setRooms(newRoom)
+    const newRooms = roomData.filter((room) => {
+      return total <= room.maxPerson
+    });
+    setRooms(newRooms)
   }
 
   // console.log(topers, 'total');
