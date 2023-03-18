@@ -14,10 +14,14 @@ const Restos = () => {
   //  const [rest, setRest] = useState(Sdata)
   const [resto, setResto] = useState(Rdata)
   console.log(resto);
-  const dataFilter = Rdata.filter((sname)=>{
-return sname.categry === 'Online delivery'|| sname.categry === 'Outdor system'
+  const dataFilter = Rdata.filter((sname) => {
+    return sname.categry === 'Online delivery' || sname.categry === 'Fast food'
   })
   console.log(dataFilter);
+
+  const outdoorFilter = Rdata.filter((offer) => {
+    return offer.categry === 'Outdoor  Service'
+  })
 
 
   const responsive = {
@@ -25,7 +29,7 @@ return sname.categry === 'Online delivery'|| sname.categry === 'Outdor system'
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
       slidesToSlide: 3 // optional, default to 1.
-      
+
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -86,19 +90,42 @@ return sname.categry === 'Online delivery'|| sname.categry === 'Outdor system'
             })
           }
         </Carousel>
-        <div className='pt-[10vh]'>
-        <Carousel responsive={responsive}  >
-          {
-            dataFilter.map((jagriti) => {
-              return (
-                <>
-                  <Resto mish={jagriti} />
+        <div className=' online_delevery pt-2'>
+          <div className='text-center p-6'>
+            <p className='tracking-[3px] text-3xl'>Online Delivery Service</p>
+            <p className='font-tertiary text-[15px] text-gray-500'>Enjoy Online Service..</p>
+          </div>
+          <Carousel responsive={responsive}  >
+            {
+              dataFilter.map((jagriti) => {
+                return (
+                  <>
+                    <Resto mish={jagriti} />
 
-                </>
-              )
-            })
-          }
-        </Carousel>
+                  </>
+                )
+              })
+            }
+          </Carousel>
+        </div>
+
+        <div className='outdoor_bar pt-2'>
+       < div className='text-center p-6'>
+            <p className='tracking-[3px] text-3xl'>Outdoor Seating Service Available </p>
+            <p className='font-tertiary text-[15px] text-gray-500 mt-1'>Enjoy your day..</p>
+          </div>
+          <Carousel responsive={responsive}  >
+            {
+              outdoorFilter.map((jagriti) => {
+                return (
+                  <>
+                    <Resto mish={jagriti} />
+
+                  </>
+                )
+              })
+            }
+          </Carousel>
         </div>
       </div>
 
