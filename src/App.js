@@ -8,6 +8,7 @@ import Home from "./pages/Home"
 import Restaurant from "./pages/Restaurant"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RoomDetails from './pages/RoomDetails';
 
 
 const router = createBrowserRouter([
@@ -21,10 +22,10 @@ const router = createBrowserRouter([
   },
  
 
-  // {
-  //   path: "/room/:id",
-  //   element: <RoomDetails/>
-  // }
+  {
+    path: "/room/:id",
+    element: <RoomDetails/>
+  }
 ])
 
 const App = () => {

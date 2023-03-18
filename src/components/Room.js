@@ -56,7 +56,7 @@ const Room = ({ room }) => {
       </div>
 
       {/* book button  */}
-    <Link className='btn btn-secondary btn-sm max-w-[240px] mx-auto
+    <Link to={`/room/${id}`} className='btn btn-secondary btn-sm max-w-[240px] mx-auto
     '>
       Book now from ${price}
     </Link>
