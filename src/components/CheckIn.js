@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
 import "../datepicker.css";
 
+
 const CheckIn = () => {
   const [startDate, setStartDate] = useState(false)
   return (
