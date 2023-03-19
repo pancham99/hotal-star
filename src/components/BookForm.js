@@ -27,7 +27,7 @@ const BookForm = () => {
         <div className='flex-1 border-r'>
           <KidsDropdown/>
         </div>
-        <button  type='Submit'  onClick={(e)=>handleClick(e)} className='btn btn-primary' >Check now</button>
+        <button  type='Submit' onClick={(e)=> handleClick(e)} className='btn btn-primary' >Check now</button>
       </div>
     </form>
   );
