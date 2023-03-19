@@ -65,7 +65,7 @@ const Restos = () => {
   console.log(resto, "hhhhhhhhhh")
 
 
-  return <section className=' py-24 bg-gray-200'>
+  return <section className=' py-24 '>
     <div className='container mx-auto lg:px-0'>
 
       <div className='text-center'>
@@ -74,27 +74,31 @@ const Restos = () => {
       </div>
       {/* grid */}
 
-      <div
-        className="space-x-2"
-      // className='grid grid-cols-1 max-w-sm mx-auto gap-[30px] lg:grid-cols-3 lg:max-w-none lg:mx-0 '
-      >
-        <Carousel responsive={responsive}  >
-          {
-            resto.map((jagriti) => {
-              return (
-                <>
-                  <Resto mish={jagriti} />
+      <div className='container mx-auto bg-gray-300 p-2'>
+        <div className="space-x-2">
+          <Carousel responsive={responsive}  >
+            {
+              resto.map((jagriti) => {
+                return (
+                  <>
+                    <Resto mish={jagriti} />
 
-                </>
-              )
-            })
-          }
-        </Carousel>
+                  </>
+                )
+              })
+            }
+          </Carousel>
+        </div>
+      </div>
+
+      <div className='text-center p-6'>
+        <p className='tracking-[3px] text-3xl'>Online Delivery Service</p>
+        <p className='font-tertiary text-[15px] text-gray-500'>Enjoy Online Service..</p>
+      </div>
+
+      <div className='container mx-auto bg-gray-300 p-2'>
         <div className=' online_delevery pt-2'>
-          <div className='text-center p-6'>
-            <p className='tracking-[3px] text-3xl'>Online Delivery Service</p>
-            <p className='font-tertiary text-[15px] text-gray-500'>Enjoy Online Service..</p>
-          </div>
+
           <Carousel responsive={responsive}  >
             {
               dataFilter.map((jagriti) => {
@@ -108,12 +112,15 @@ const Restos = () => {
             }
           </Carousel>
         </div>
+      </div>
 
+      <div className='text-center p-6'>
+        <p className='tracking-[3px] text-3xl'>Outdoor Seating Service Available </p>
+        <p className='font-tertiary text-[15px] text-gray-500 mt-1'>Enjoy your day..</p>
+      </div>
+
+      <div className='container mx-auto bg-gray-300 p-2'>
         <div className='outdoor_bar pt-2'>
-       < div className='text-center p-6'>
-            <p className='tracking-[3px] text-3xl'>Outdoor Seating Service Available </p>
-            <p className='font-tertiary text-[15px] text-gray-500 mt-1'>Enjoy your day..</p>
-          </div>
           <Carousel responsive={responsive}  >
             {
               outdoorFilter.map((jagriti) => {
@@ -128,6 +135,7 @@ const Restos = () => {
           </Carousel>
         </div>
       </div>
+
 
     </div>
   </section>;
