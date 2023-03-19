@@ -130,10 +130,10 @@ const Rdata=[
     },
     { 
         id:4,
-        sname:'The Great Indian Kitchen',
+        sname:'Great Indian Kitchen',
         offer:'free Reservation ',
         seoffer:'10% off on food & all bev',
-        imgsrc:'https://img.freepik.com/free-photo/group-friends-taking-selfie-while-eating-fast-food_23-2148718859.jpg?w=1060&t=st=1679133070~exp=1679133670~hmac=78e2e1f9f5e7a7c64a2e389da8b0b3b3e93f6a17c10d678716972f71e577416b',
+        imgsrc:'https://img.freepik.com/free-photo/asian-friends-couple-eating-pizza-during-party-pizzeria-happy-indian-people-having-fun-together-eating-italian-food-sitting-couch_627829-1247.jpg?w=900&t=st=1679215382~exp=1679215982~hmac=b1a45700e2d80203cdd8e2ca9eb353826b969462d6fbbc0d00b38ff4a7c627f5',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
         categry: 'Fast food'

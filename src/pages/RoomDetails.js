@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { FaCheck } from 'react-icons/fa';
 import { icons } from 'react-icons/lib';
 import AdultsDropdown from '../components/AdultsDropdown';
 import CheckIn from '../components/CheckIn';
 import CheckOut from '../components/CheckOut';
-import KidsDropdown from '../components/KidsDropdown';
-
+import KidsDropdown from '../components/KidsDropdown'; 
+import { RoomContext } from '../context/RoomContext';
+import { useParams } from 'react-router-dom';
 
 const RoomDetails = () => {
-  
+ const {rooms} = useContext(RoomContext) 
+ const {id} = useParams()
+ const singleRoom = rooms.find((item)=>{
+  return item.id === Number(id)
+ })
+ const {name, price,size, description,facilities,image,imageLg,maxPerson } = singleRoom 
+
+console.log(singleRoom, 'idcheck');
   return (
     <section>
       {/* banner */}
@@ -18,16 +26,16 @@ const RoomDetails = () => {
         <div className='absolute w-full h-full bg-black/70'></div>
         {/* title */}
 
-        <h1 className='text-6xl text-white z-20 font-primary text-center'>Deatils</h1>
+        <h1  className='text-6xl text-white z-20 font-primary text-center'> Wecome to {name}</h1>
       </div>
 
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row h-full py-24'>
           {/* left section */}
           <div className='w-full h-full lg:w-[60%] px-6'>
-            <h2 className='h2'>Deluxe Room</h2>
-            <p className='mb-8'>The institute provides magnificent residential facilities offering a comprehensive range of facilities within the institute, separately for boys and girls</p>
-            <img src='http://localhost:3000/static/media/1.109453ab89c797c1ca63.png' alt='' />
+            <h2 className='h2'>{name}</h2>
+            <p className='mb-8'>{description}</p>
+            <img src={imageLg} alt='' />
 
             {/* facilities */}
             <div className='mt-12'>
@@ -37,11 +45,14 @@ const RoomDetails = () => {
               {/* grid */}
 
               <div className='grid grid-cols-3 gap-6 mb-12'>
+                {facilities.map((item, index)=>{
+                  const {name ,icon} = item
+                   return (<div className='flex items-center gap-x-3 flex-1'>
+                   <div className='text-3xl text-center'>{icon}</div>
+                   <div className='text-base'>{name}</div>
+                 </div>) 
+                })}
 
-                <div className='flex items-center gap-x-3 flex-1'>
-                  <div className='text-3xl text-center'>icons</div>
-                  <div className='text-base'>facilities name</div>
-                </div>
 
               </div>
 
