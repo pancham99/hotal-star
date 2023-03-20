@@ -8,7 +8,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/close-up-smiley-friends-restaurant_23-2148965380.jpg?w=900&t=st=1678871241~exp=1678871841~hmac=66100e77b0ef3ebb3bae3d5724d0df8bfa7aaf1ebbf11f164d8187665ba153b6',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
-        star:5
+        star:3.5
        
     },
 
@@ -20,7 +20,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/premium-photo/group-friends-eating-restaurant_23-2148006646.jpg?w=900',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'320',
-        star:4
+        star:3
     },
 
     {
@@ -31,7 +31,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/happy-waiter-serving-food-group-cheerful-friends-pub_637285-12525.jpg?w=900&t=st=1678997761~exp=1678998361~hmac=df72c9e10d2174fd37431ab455bbfc82aca51220e9d670be5c819222e35fad16',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'699',
-        star:5
+        star:2
         
     },
     {
@@ -42,7 +42,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/premium-photo/chicken-pork-beef-meat-skewers-with-vegetables-spicy-potatoes_52137-30827.jpg?w=900',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'499',
-        star:3.5
+        star:2
     },
 
     {
@@ -85,7 +85,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/free-photo/friends-eating-restaurant_23-2148006623.jpg?w=900&t=st=1678997178~exp=1678997778~hmac=2a7c01878761d48a21917c998d75b4ecfcbb71f48722762b8b3e09f426ee39cd',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'522',
-        star:4.5
+        star:3
     },
     {
         id:9,
@@ -95,6 +95,7 @@ const Rdata=[
         imgsrc:'https://img.freepik.com/premium-photo/smiling-waiter-bringing-coffee-guest-restaurant_236854-17943.jpg?w=900',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'488',
+        star:4.5
     },
     {
         id:10,
@@ -104,7 +105,7 @@ const Rdata=[
         imgsrc:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/e9/b6/40/reception.jpg?w=500&h=-1&s=1',
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'799',
-        star:4.5
+        star:3.5
     },
 /// new add for fast food and out door resto Online delivery
     { 
@@ -116,7 +117,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
         categry: 'Online delivery',
-        star:4.5
+        star:5
     },
     { 
         id:2,
@@ -127,7 +128,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
         categry: 'Online delivery',
-        star:4.5
+        star:2.5
     },
     { 
         id:3,
@@ -138,7 +139,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'462',
         categry: 'Online delivery', 
-        star:4.5
+        star:5
     },
     { 
         id:4,
@@ -149,7 +150,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
         categry: 'Fast food',
-        star:4.5
+        star:4
     },
     { 
         id:5,
@@ -160,7 +161,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'562',
         categry: 'Fast food',
-        star:4.5
+        star:3
 
     },
     { 
@@ -186,7 +187,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'699',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:5
     },
     { 
         id:2,
@@ -197,7 +198,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'799',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:2.5
     },
     { 
         id:3,
@@ -208,7 +209,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'799',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:4
     },
     { 
         id:4,
@@ -219,7 +220,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'399',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:5
     },
     { 
         id:5,
@@ -230,7 +231,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'449',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:4
     },
     { 
         id:6,
@@ -241,7 +242,7 @@ const Rdata=[
         foodtype: 'Indian ,Italian, Chinese...',
         Rate:'499',
         categry: 'Outdoor  Service',
-        star:4.5
+        star:3
     },
 ];
 
