@@ -9,6 +9,7 @@ import Restaurant from "./pages/Restaurant"
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RoomDetails from './pages/RoomDetails';
+import Spa from './pages/Spa';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: "/restaurant",
     element: <Restaurant/>
   },
+  {
+    path: "/spa",
+    element: <Spa/>
+  },
  
 
   {
@@ -30,7 +35,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return <div>
-    <Header/>
+    {/* <Header/> */}
     <RouterProvider router={router}/>
     <Footer/>
   </div>;
