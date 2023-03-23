@@ -7,6 +7,7 @@ import CheckOut from '../components/CheckOut';
 import KidsDropdown from '../components/KidsDropdown'; 
 import { RoomContext } from '../context/RoomContext';
 import { useParams } from 'react-router-dom';
+import Header from '../components/Header';
 
 const RoomDetails = () => {
  const {rooms} = useContext(RoomContext) 
@@ -19,6 +20,8 @@ const RoomDetails = () => {
 console.log(singleRoom, 'idcheck');
   return (
     <section>
+      
+      <Header/>
       {/* banner */}
 
       <div className='bg-room h-[560px] bg-cover bg-center relative flex justify-center items-center'>
