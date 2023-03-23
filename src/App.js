@@ -10,6 +10,7 @@ import Restaurant from "./pages/Restaurant"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RoomDetails from './pages/RoomDetails';
 import Spa from './pages/Spa';
+import Contact from './pages/Contact';
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/spa",
     element: <Spa/>
+  },
+  {
+    path: "/contact",
+    element: <Contact/>
   },
  
 

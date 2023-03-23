@@ -39,7 +39,7 @@ const Header = () => {
             Spa
           </a>
 
-          <a href='' className='hover:text-accent transition'>
+          <a href='/contact' className='hover:text-accent transition'>
             Contact
           </a>
         </nav>
