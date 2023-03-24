@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import RestoDetails from './pages/RestoDetails';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
     path: "/spa",
     element: <Spa/>
   },
+
+
   {
     path: "/contact",
     element: <Contact/>
