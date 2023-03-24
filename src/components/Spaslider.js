@@ -47,7 +47,7 @@ const SpaSlider = () => {
                 <button className='btn btn-lg btn-primary mx-auto'>{btnText}</button>
               </div>
               <div className='absolute top-0 w-full h-hull'>
-                <img className='object-cover h-full w-full' src={bg} alt="" />
+                <img className='object-cover h-screen w-full' src={bg} alt="" />
               </div>
               <div className='absolute w-full h-full bg-black/70'>
 
