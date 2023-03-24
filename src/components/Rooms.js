@@ -1,25 +1,24 @@
 import React, { useContext } from 'react';
 //context
 import { RoomContext } from '../context/RoomContext';
-import Room from './Room';
 //components
-
+import Room from './Room';
 // loader
-// import { SpinnerDotted } from "spinners-react"
+import { SpinnerDotted } from "spinners-react"
 // import HeroSlider from './HeroSlider';
 
 const Rooms = () => {
-  const { rooms } = useContext(RoomContext)
+  const { rooms, loading } = useContext(RoomContext)
   // console.log(rooms)
   return <section className=' py-24'>
 
     {/* overlay spinners */}
 
-    {/* {loading && (
+    {loading && (
       <div className='h-screen fixed bottom-0 top-0 bg-black/90 w-full z-50 flex justify-center items-center'>
         <SpinnerDotted color='white' />
       </div>
-    )} */}
+    )}
 
     <div className='container mx-auto lg:px-0'>
 

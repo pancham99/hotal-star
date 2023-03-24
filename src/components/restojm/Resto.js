@@ -20,12 +20,6 @@ const Resto = ({ mish }) => {  //
           <span className='resto_name text-2xl capitalize'> {sname}</span>
           <div className=' flex flex-row items-center gap-1' >
             <div className=' flex gap-1 py-2'>
-              {/* <a href='#' className=' bg-amber-800 h-4 w-4 rounded-full'></a>
-              <a href='#' className=' bg-amber-800 h-4 w-4 rounded-full'></a>
-              <a href='#' className=' bg-amber-800 h-4 w-4 rounded-full'></a>
-              <a href='#' className=' bg-amber-800 h-4 w-4 rounded-full'></a>
-              <a href='#' className=' bg-amber-800 h-4 w-4 rounded-full'></a> */}
-
               <Star stars={star}/>
             </div>
             <div>
