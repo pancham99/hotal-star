@@ -45,7 +45,7 @@ const SpaSlider = () => {
       delay: 3000,
       disableOnInteraction: false,
 
-    }} className='heroSlider h-[600px] lg:h-[860px]'>
+    }} className='heroSlider h-[600px] lg:h-screen'>
       {
         slides.map((slide, index) => {
           const { title, bg, btnText } = slide

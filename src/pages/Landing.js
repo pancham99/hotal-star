@@ -3,11 +3,11 @@ import About from '../components/About'
 
 const Landing = () => {
   return (
-  <>
-  <div>
-<About />
-  </div>
-  </>
+    <>
+      <div>
+        <About />
+      </div>
+    </>
   )
 }
 

@@ -14,7 +14,7 @@ const Spaheader = () => {
   })
   return (
     <>
-      <header className={`${spaheaders ? 'bg-white py-6 shadow-lg' : 'bg-transparent py-8'} fixed z-50 transition-all duration-500 w-full `}>
+      <header className={`${spaheaders ? 'bg-orange-50 py-6' : 'bg-transparent py-8'} fixed z-50 transition-all duration-500 w-full `}>
         <div className='spa_container mx-auto flex flex-col items-center gap-y-6 lg:flex-row  lg:justify-between lg:gap-y-0'>
           <a href='/'>
             {spaheaders ? <img className='w-[160px]' src={LogoDark} /> : <img className='w-[160px]' src={LogoWhite} />}
