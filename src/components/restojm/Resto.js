@@ -8,7 +8,7 @@ import Star from '../Star';
 
 const Resto = ({ mish }) => {  //
   console.log(mish, "tpam")
-  const { Rate, foodtype, imgsrc, offer, seoffer, sname, star } = mish // disstructure
+  const { Rate, foodtype, imgsrc, offer, seoffer, sname, star, id } = mish // disstructure
   return (
     <div className='bg-gray-300 p-2'>
       <div className='bg-white p-2 min-h-[300px] group'>
@@ -20,16 +20,20 @@ const Resto = ({ mish }) => {  //
           <span className='resto_name text-2xl capitalize'> {sname}</span>
           <div className=' flex flex-row items-center gap-1' >
             <div className=' flex gap-1 py-2'>
-              <Star stars={star}/>
+              <Star stars={star} />
             </div>
             <div>
               <a href='#' className='card_rate text-md '>{Rate} </a>
             </div>
           </div>
           <h2 className='text-gray-400'>{foodtype}</h2>
-          <div className='flex gap-2 py-2'>
-            <h3 className='resto_offer bg-green-600 text-xs text-white rounded-md p-1 text-center capitalize  w-[20vh] items-center '>{offer} </h3>
-            <span className='card_seoffer font-semibold text-xs font-mono	'> {seoffer}</span>
+          <div className='flex items-center py-2 justify-between'>
+            <Link to={`/resto/${id}`}>
+            <h3 className=' bg-green-600 cursor-pointer text-xs text-white flex-1 rounded-md py-2 p-1 text-center capitalize items-center '>{offer} </h3>
+            </Link>
+           
+             <span className='card_seoffer font-semibold text-xs font-mono'> {seoffer}</span>
+          
           </div>
         </div>
       </div>
