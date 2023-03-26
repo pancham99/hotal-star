@@ -1,11 +1,15 @@
 import React from 'react'
 import About from '../components/About'
+import SpaCityInfo from '../components/SpaCityInfo'
+
 
 const Landing = () => {
   return (
     <>
-      <div>
+      <div className='mb-6'>
         <About />
+        <SpaCityInfo/>
+
       </div>
     </>
   )
