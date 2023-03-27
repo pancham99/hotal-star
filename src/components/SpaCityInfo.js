@@ -24,8 +24,36 @@ const SpaCityInfo = () => {
     //  console.log(selectedOption, 'alldata')
     return (
         <>
+            <section>
+                <div className='h-[440px] bg-center bg-cover relative' style={{ backgroundImage: `url("https://img.freepik.com/free-photo/full-shot-woman-relaxing-boat_23-2149046375.jpg?w=900&t=st=1679824392~exp=1679824992~hmac=2889c89cda0241ca37e7743126cc5a609608b7d25c17e2a666d2f15856faaf3b")` }}>
 
-            <div className='spa_city'>
+
+                    <div className='bg-black/60 absolute h-full w-full'>
+                        <div className='absolute top-16 left-[60vh]'>
+                            <h1 className='text-white text-2xl  font-semibold z-20'>CHOOSE FROM OUR 70+ SPAS ACROSS INDIA</h1>
+                        </div>
+                        <p className='absolute text-white top-32  leading-5 left-[20vh] text-lg font-light font-serif'>Whether you are seeking a relaxing spa getaway at a resort  or a few hours of calm near you within the city, Tattva has a Spa location for you.</p>
+                        <h1 className='text-white text-3xl  font-semibold absolute top-[25vh] left-[75vh]'>FIND A SPA NEAR ME</h1>
+
+                        <div name="cars" id="cars" className='bg-yellow-50 text-black text-bold h-10 w-[30vh] absolute  top-[35vh] left-[83vh]'>
+
+
+                            <Select
+                                options={options}
+                                value={selectedOption}
+                                onChange={setSelectedOption}
+                                isClearable={true}
+                            />
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+              
+            </section>
+            {/* <div className='spa_city'>
                 <section className='h-full relative'>
                     <div className=' w-full h-full'>
                     <div className='absolute w-full h-full bg-black/60'>
@@ -41,17 +69,7 @@ const SpaCityInfo = () => {
                     <h1 className='text-white text-3xl  font-semibold absolute top-[30vh] left-[80vh]'>FIND A SPA NEAR ME</h1>
                     <div name="cars" id="cars" className='bg-yellow-50 text-black text-bold h-10 w-[30vh] absolute  top-[40vh] left-[90vh]'>
 
-                        {/* {list.map((city) => {
-                            return (
-                                <>
-                                    <h1>{city.city }
-                                    </h1>
-                                </>
-                            )
-                        }
-                        )
-
-                        } */}
+                    
                         <Select 
                             options={options}
                             value={selectedOption}
@@ -60,7 +78,7 @@ const SpaCityInfo = () => {
                         />
                     </div>
                 </section>
-            </div>
+            </div> */}
         </>
     )
 }

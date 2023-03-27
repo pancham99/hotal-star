@@ -12,6 +12,7 @@ import RoomDetails from './pages/RoomDetails';
 import Spa from './pages/Spa';
 import Contact from './pages/Contact';
 import RestoDetails from './pages/RestoDetails';
+import Tattva from './pages/Tattva';
 
 
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/spa",
     element: <Spa/>
+  },
+  {
+    path: "/tattva",
+    element: <Tattva/>
   },
 
 
