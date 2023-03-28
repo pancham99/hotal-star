@@ -21,7 +21,7 @@ const Spa = () => {
                     </div>
                     <div className='mx-10 py-5'>
 
-                        <div class="grid grid-cols-4 gap-8">
+                        <div class="grid lg:grid-cols-4 gap-8">
                             <div className='bg-red-500'>
                                 <div className='relative'>
                                     <img src='https://tattvaspa.com/wp-content/uploads/2022/04/Massages-Our-Services.jpg' />
@@ -72,7 +72,7 @@ const Spa = () => {
 
                 <section className='bg-white py-10'>
                     <div className='mx-10'>
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid lg:grid-cols-2 gap-4">
                             <div>
                                 <div>
                                     <img src='https://tattvaspa.com/wp-content/uploads/2022/04/Gift-a-Spa600x500_Tattva.jpg' />
