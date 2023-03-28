@@ -2,10 +2,41 @@ import React from 'react'
 import Spaheder from '../components/Spaheder'
 import SpaSlider from '../components/Spaslider'
 import Landing from './Landing'
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import img1 from '../assets/img/logo.jpeg'
+import video from '../assets/img/spaslider/spavideo1.mp4';
 
+const review = [
+    {
+        img : img1,
+        username: 'Jagriti Mishra',
+        place: 'undro spa at the merdien gurgaon'
+    },
+    {
+        img : img1,
+        username: 'Jagriti Mishra',
+        place: 'undro spa at the merdien gurgaon'
+    },
+    {
+        img : img1, 
+        username: 'Jagriti Mishra',
+        place: 'undro spa at the merdien gurgaon'
+    },
+    {
+        img : img1,
+        username: 'Jagriti Mishra',
+        place: 'undro spa at the merdien gurgaon'
+    },
+    {
+        img : img1,
+        username: 'Jagriti Mishra',
+        place: 'undro spa at the merdien gurgaon'
+    },
+]
 
 const Spa = () => {
+
     return (
         <>
             <div className='mb-4 bg-orange-50'>
@@ -80,7 +111,7 @@ const Spa = () => {
                                 <div className='space-y-2'>
                                     <h1 className='text-center text-2xl'>GIFT A SPA</h1>
                                     <p className='text-center text-sm'>
-                                    Gift your loved ones a luxurious wellness experience with Tattva Spa. Our Spa E-GIft Cards are the perfect way to pamper and express your care. There’s one for every occasion. Add a heart felt note to make it really special.
+                                        Gift your loved ones a luxurious wellness experience with Tattva Spa. Our Spa E-GIft Cards are the perfect way to pamper and express your care. There’s one for every occasion. Add a heart felt note to make it really special.
                                     </p>
 
                                     <button className='btn btn-primary btn-sm max-w-[240px] mx-auto p'>BOOK NOW</button>
@@ -94,7 +125,7 @@ const Spa = () => {
                                 <div className='space-y-2'>
                                     <h1 className='text-center text-2xl'>GIFT A SPA</h1>
                                     <p className='text-center text-sm'>
-                                    Gift your loved ones a luxurious wellness experience with Tattva Spa. Our Spa E-GIft Cards are the perfect way to pamper and express your care. There’s one for every occasion. Add a heart felt note to make it really special.
+                                        Gift your loved ones a luxurious wellness experience with Tattva Spa. Our Spa E-GIft Cards are the perfect way to pamper and express your care. There’s one for every occasion. Add a heart felt note to make it really special.
                                     </p>
 
                                     <button className='btn btn-primary btn-sm max-w-[240px] mx-auto p'>BOOK NOW</button>
@@ -102,6 +133,35 @@ const Spa = () => {
                             </div>
                         </div>
                     </div>
+                </section>
+
+                {/* GOOD DAY SECTION */}
+
+
+                <section className='bg-orange-50 h-[340px]'>
+                    <div className='flex text-center items-center justify-center'>
+                        {/* <div className=''>logo</div> */}
+                        <p className=' text-xs uppercase mx-w-[920px] leading-6 p-24 w-[100vh] text-gray-500/75'><img className=' h-9' src={img1} />OF SELF CARE AT TATTVA SPA. LOOSE YOUR DAILY STRESSORS & RENEW YOURSELF WITH OUR PROFESSIONALLY TRAINED HEALERS.
+                            OUR SPAS FOLLOW HIGH STANDARDS OF HYGIENE & WELCOME FAMILIES FOR ADOPTING WELLNESS AS A WAY OF LIFE</p>
+                        <div className='text-center items-center justify-center relative'>
+                            {/* <img className='h-[290px] mt-6' src='https://img.freepik.com/free-photo/beautiful-woman-bathrobe-reading-magazine-while-relaxing-beauty-spa-looking-camera_637285-7434.jpg?w=900&t=st=1679997610~exp=1679998210~hmac=c79403d16ec706d7c2fea2cb6b62a3d4607da98865f6f08cdfd4f27131c9877e' /> */}
+
+                            <video className='h-[290px] ' controls />
+                            <source src={video} type="video/mp4" />
+                            <img className=' absolute top-2 left-2 h-4' src={img1} />
+                        </div>
+                    </div>
+
+                </section>
+
+                {/* GOOD DAY SECTION END */}
+
+                {/* REVIEW SECTION START */}
+
+                <section className='bg-white h-[420px] mt-6' >
+                    <SwiperSlide>
+
+                    </SwiperSlide>
                 </section>
 
             </div>
