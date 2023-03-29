@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Spaheder from '../components/Spaheder'
 import SpaSlider from '../components/Spaslider'
 import Landing from './Landing'
@@ -6,36 +6,59 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import img1 from '../assets/img/logo.jpeg'
 import video from '../assets/img/spaslider/spavideo1.mp4';
+import Carousel from 'react-multi-carousel';
 
 const review = [
     {
-        img : img1,
+        img: img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img : img1,
+        img: img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img : img1, 
+        img: img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img : img1,
+        img: img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img : img1,
+        img: img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
-]
+];
 
 const Spa = () => {
+
+    const [data, setData] = useState(review)
+    console.log(data, 'review')
+
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 4,
+          slidesToSlide: 3 // optional, default to 1.
+    
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2,
+          slidesToSlide: 2 // optional, default to 1.
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+          slidesToSlide: 1 // optional, default to 1.
+        }
+      };
 
     return (
         <>
@@ -147,9 +170,9 @@ const Spa = () => {
                             {/* <img className='h-[290px] mt-6' src='https://img.freepik.com/free-photo/beautiful-woman-bathrobe-reading-magazine-while-relaxing-beauty-spa-looking-camera_637285-7434.jpg?w=900&t=st=1679997610~exp=1679998210~hmac=c79403d16ec706d7c2fea2cb6b62a3d4607da98865f6f08cdfd4f27131c9877e' /> */}
 
                             <video className='h-[290px] ' controls>
-                            <source src={video} type="video/mp4"    />
+                                <source src={video} type="video/mp4" />
                             </video>
-                           
+
                             <img className=' absolute top-2 left-2 h-4' src={img1} />
                         </div>
                     </div>
@@ -161,9 +184,18 @@ const Spa = () => {
                 {/* REVIEW SECTION START */}
 
                 <section className='bg-white h-[420px] mt-6' >
-                    <SwiperSlide>
-        
-                    </SwiperSlide>
+
+                    <Carousel responsive={responsive}>
+                        {
+                            review.map((reviews) => {
+                                return (
+                                    <>
+                                        <data mitemsish={reviews} />
+                                    </>
+                                )
+                            })
+                        }
+                    </Carousel>
                 </section>
 
             </div>
