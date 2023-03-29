@@ -9,33 +9,31 @@ import video from '../assets/img/spaslider/spavideo1.mp4';
 
 const review = [
     {
-        img: img1,
+        img : img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img: img1,
+        img : img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img: img1,
+        img : img1, 
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img: img1,
+        img : img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
     {
-        img: img1,
+        img : img1,
         username: 'Jagriti Mishra',
         place: 'undro spa at the merdien gurgaon'
     },
 ]
-
-
 
 const Spa = () => {
 
@@ -140,21 +138,18 @@ const Spa = () => {
                 {/* GOOD DAY SECTION */}
 
 
-                <section className='bg-orange-50 h-[380px] py-10'>
+                <section className='bg-orange-50 h-[340px]'>
                     <div className='flex text-center items-center justify-center'>
                         {/* <div className=''>logo</div> */}
-                        <p className=' text-xs uppercase mx-w-[920px] leading-6 p-24 w-[100vh] text-gray-500/75'><img className=' h-9' src={img1} />OF SELF CARE AT TATTVA SPA. LOOSE YOUR DAILY STRESSORS & RENEW YOURSELF WITH OUR PROFESSIONALLY TRAINED HEALERS.
+                        <p className=' text-xs uppercase mx-w-[920px] leading-6 p-24 w-[100vh] text-gray-500/75'><img className=' h-8' src={img1} />OF SELF CARE AT TATTVA SPA. LOOSE YOUR DAILY STRESSORS & RENEW YOURSELF WITH OUR PROFESSIONALLY TRAINED HEALERS.
                             OUR SPAS FOLLOW HIGH STANDARDS OF HYGIENE & WELCOME FAMILIES FOR ADOPTING WELLNESS AS A WAY OF LIFE</p>
-                        <div className='text-center items-center justify-center relative '>
+                        <div className='text-center items-center justify-center relative'>
                             {/* <img className='h-[290px] mt-6' src='https://img.freepik.com/free-photo/beautiful-woman-bathrobe-reading-magazine-while-relaxing-beauty-spa-looking-camera_637285-7434.jpg?w=900&t=st=1679997610~exp=1679998210~hmac=c79403d16ec706d7c2fea2cb6b62a3d4607da98865f6f08cdfd4f27131c9877e' /> */}
 
-                            <video controls width="70%" height="70%">
-                                <source src={video} type="video/mp4" />
-                                
+                            <video className='h-[290px] ' controls>
+                            <source src={video} type="video/mp4"    />
                             </video>
-
-                            {/* <video className='h-[290px] ' controls />
-                            <source src={video} type="video/mp4" /> */}
+                           
                             <img className=' absolute top-2 left-2 h-4' src={img1} />
                         </div>
                     </div>
@@ -167,7 +162,7 @@ const Spa = () => {
 
                 <section className='bg-white h-[420px] mt-6' >
                     <SwiperSlide>
-
+        
                     </SwiperSlide>
                 </section>
 
