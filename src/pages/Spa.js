@@ -4,7 +4,7 @@ import SpaSlider from '../components/Spaslider'
 import Landing from './Landing'
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import img1 from '../assets/img/logo.jpeg'
+import img1 from '../assets/img/spaslider/SPA_silde1.webp'
 import video from '../assets/img/spaslider/spavideo1.mp4';
 import Carousel from 'react-multi-carousel';
 
@@ -36,29 +36,11 @@ const review = [
     },
 ];
 
-const Spa = () => {
-
+const Spa = (mish) => {
+    console.log(mish ,'gidhi');
+const  {img, place, username} = mish
     const [data, setData] = useState(review)
     console.log(data, 'review')
-
-    const responsive = {
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 4,
-          slidesToSlide: 3 // optional, default to 1.
-    
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2,
-          slidesToSlide: 2 // optional, default to 1.
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
-        }
-      };
 
     return (
         <>
@@ -185,17 +167,24 @@ const Spa = () => {
 
                 <section className='bg-white h-[420px] mt-6' >
 
-                    <Carousel responsive={responsive}>
+                    <div className='space-x-2'>
                         {
                             review.map((reviews) => {
                                 return (
                                     <>
-                                        <data mitemsish={reviews} />
+                                        <data mish={reviews} />
                                     </>
                                 )
                             })
                         }
-                    </Carousel>
+                        <div className='space-x-2 '>
+                            <img src={img1} />
+                            <div>
+                                <h1 className='text-black'>{username}</h1>
+                                <p>{place}</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
             </div>
