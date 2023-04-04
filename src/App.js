@@ -13,6 +13,7 @@ import Spa from './pages/Spa';
 import Contact from './pages/Contact';
 import RestoDetails from './pages/RestoDetails';
 import Tattva from './pages/Tattva';
+import AboutAd from './pages/AboutAd';
 
 
 
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
   {
     path: "/spa",
     element: <Spa/>
+  },
+
+  {
+    path: "/about",
+    element: <AboutAd/>
   },
   {
     path: "/tattva",

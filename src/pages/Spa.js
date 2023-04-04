@@ -49,7 +49,6 @@ const  {img, place, username} = mish
                 <SpaSlider />
                 <Landing />
 
-
                 {/* WELLNESS SERVICES */}
                 <section className='py-20'>
                     <div className='py-5'>
@@ -167,24 +166,24 @@ const  {img, place, username} = mish
 
                 <section className='bg-white h-[420px] mt-6' >
 
-                    <div className='space-x-2'>
-                        {
-                            review.map((reviews) => {
-                                return (
-                                    <>
-                                        <data mish={reviews} />
-                                    </>
-                                )
-                            })
-                        }
-                        <div className='space-x-2 '>
-                            <img src={img1} />
-                            <div>
-                                <h1 className='text-black'>{username}</h1>
-                                <p>{place}</p>
-                            </div>
-                        </div>
-                    </div>
+                            {/* <div className='space-x-2'>
+                                {
+                                    review.map((reviews) => {
+                                        return (
+                                            <>
+                                                <data mish={reviews} />
+                                            </>
+                                        )
+                                    })
+                                }
+                                <div className='space-x-2 '>
+                                    <img src={img1} />
+                                    <div>
+                                        <h1 className='text-black'>{username}</h1>
+                                        <p>{place}</p>
+                                    </div>
+                                </div>
+                            </div> */}
                 </section>
 
             </div>

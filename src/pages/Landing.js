@@ -9,7 +9,6 @@ const Landing = () => {
       <div className='mb-6'>
         <About />
         <SpaCityInfo/>
-
       </div>
     </>
   )
