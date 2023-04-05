@@ -82,41 +82,50 @@ const AboutAdina = () => {
             </section>
 
             {/* ABOUT THE ADINA SECTION */}
-            <section className='flex gap-36'>
-                <ul>
-                    <a>ADINA SPA</a>
-                    <a><li>About Us</li></a>
-                    <a><li>Careers</li></a>
-                    <a><li>Locations</li></a>
-                    <a><li>Services</li></a>
-                    <a><li>Reservations</li></a>
-                    <a><li>Privacy Policy</li></a>
+            <section className='footar_section bg-lime-900/60 text-white  leading-8 '>
+                <div className='flex gap-20  px-16  py-20'>     
+                <ul className=''>
+                    <a href='#' className='text-lg font-bold'>ADINA SPA</a>
+                    <a href='#'><li>About Us</li></a>
+                    <a href='#'><li>Careers</li></a>
+                    <a href='#'><li>Locations</li></a>
+                    <a href='#'><li>Services</li></a>
+                    <a href='#'><li>Reservations</li></a>
+                    <a href='#'><li>Privacy Policy</li></a>
                 </ul>
+                    <ul>
+                    <a href='#' className='text-lg font-bold leading-3'>SPA SPECIALS</a>
+                        <a href='#'><li>Wellness Blog</li></a>
+                        <a href='#'><li>Careers</li></a>
+                        <a href='#'><li>Spa Party</li></a>
+                        <a href='#'><li>Gifting Categories</li></a>
+                    </ul>
+                    <ul>
+                    <a href='#' className='text-lg font-bold'>LOCATIONS</a>
+                        <a href='#'><li>Spa in Mumbai</li></a>
+                        <a href='#'><li>Spa in Bangalore</li></a>
+                        <a href='#'><li>Spa in Gurgaon</li></a>
+                        <a href='#'><li>Spa in Pune  </li></a>
+                        <a href='#'><li>Spa in Hyderabad </li></a>
+                    </ul>
+                    <ul>
+                    <a href='#' className='text-lg font-bold'>SERVICES</a>
+                        <a href='#'><li>Beauty Elixirs</li></a>
+                        <a href='#'><li>Beauty Essentials</li></a>
+                        <a href='#'><li>Massages</li></a>
+                    </ul>
                 <ul>
-                <a>SPA SPECIALS</a>
-                    <a><li>Wellness Blog</li></a>
-                    <a><li>Careers</li></a>
-                    <a><li>Spa Party</li></a>
-                    <a><li>Gifting Categories</li></a>
+                <a href='#' className='text-lg font-bold'>SIGN UP TO OUR NEWSLETTER TO STAY ON TREND</a>
+                    <a href='#'><li>SUBSCRIBE</li></a>
                 </ul>
-                <ul>
-                <a>ADINA SPA</a>
-                    <a><li>About Us</li></a>
-                    <a><li>Careers</li></a>
-                    <a><li>Locations</li></a>
-                    <a><li>Services</li></a>
-                    <a><li>Reservations</li></a>
-                    <a><li>Privacy Policy</li></a>
-                </ul>
-                <ul>
-                <a>ADINA SPA</a>
-                    <a><li>About Us</li></a>
-                    <a><li>Careers</li></a>
-                    <a><li>Locations</li></a>
-                    <a><li>Services</li></a>
-                    <a><li>Reservations</li></a>
-                    <a><li>Privacy Policy</li></a>
-                </ul>
+                </div>
+                <div className='px-16 p-2'>
+                    <ul>
+                    <a href='#' className='text-lg font-bold'>CONTACT US</a>
+                        <a href='#'><li>Phone: 9891029190</li></a>
+                        <a href='#'><li>Email: wecare@adinaspa.com</li></a>
+                    </ul>
+                </div>
             </section>
         </>
     )

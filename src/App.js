@@ -35,6 +35,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: <AboutAd/>
   },
+  
   {
     path: "/tattva",
     element: <Tattva/>
