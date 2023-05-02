@@ -4,7 +4,7 @@ import AboutAdina from '../components/AboutAdina'
 
 const AboutAd = () => {
   return (
-    <div className='mb-6'>
+    <div className=''>
         <Spaheader/>
       <AboutAdina /> 
     </div>
