@@ -1,6 +1,6 @@
 {
         "name": "hotel",
-        "homepage": "https://pancham99.github.io/hotal-star",
+         "homepage": "https://pancham99.github.io/hotal-star",
          "version": "0.1.0",
          "private": true,
         "dependencies": {
