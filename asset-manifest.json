@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/hotal-star/static/css/main.337f7528.css",
-    "main.js": "/hotal-star/static/js/main.e20ccaf0.js",
-    "static/media/spavideo1.mp4": "/hotal-star/static/media/spavideo1.fbf6290e4520c010854d.mp4",
+    "main.css": "/hotal-star/static/css/main.00765f1e.css",
+    "main.js": "/hotal-star/static/js/main.2f3d7816.js",
     "static/media/1.jpg": "/hotal-star/static/media/1.ebdcbd1e0b239b5e4ac1.jpg",
     "static/media/2.jpg": "/hotal-star/static/media/2.151cff65fc629c3bc5b7.jpg",
     "static/media/3.jpg": "/hotal-star/static/media/3.95edf8cfc905d640804a.jpg",
@@ -21,33 +20,16 @@
     "static/media/1.png": "/hotal-star/static/media/1.109453ab89c797c1ca63.png",
     "static/media/2.png": "/hotal-star/static/media/2.209ee0a12092b55ed2ad.png",
     "static/media/8.png": "/hotal-star/static/media/8.cd05417232ed0e97ff88.png",
-    "static/media/image2.jpeg": "/hotal-star/static/media/image2.d6015cfc6f2328c330e7.jpeg",
-    "static/media/image3.jpeg": "/hotal-star/static/media/image3.b40961a98055f36c78e1.jpeg",
     "static/media/3.png": "/hotal-star/static/media/3.9d7f1767699602029e64.png",
     "static/media/5.png": "/hotal-star/static/media/5.84f19999614e1d067a51.png",
-    "static/media/image1.webp": "/hotal-star/static/media/image1.2a7065beec5fa63cf2e5.webp",
-    "static/media/SPA_SLIDE2.webp": "/hotal-star/static/media/SPA_SLIDE2.d560460479857c91489c.webp",
-    "static/media/spa1.avif": "/hotal-star/static/media/spa1.7195db2d7ab0030ecd0c.avif",
-    "static/media/SPA_silde1.webp": "/hotal-star/static/media/SPA_silde1.1734c7e043304a8b56b7.webp",
-    "static/media/SPA_SLIDE3.webp": "/hotal-star/static/media/SPA_SLIDE3.af1e61084966026d1eed.webp",
     "static/media/logo-dark.svg": "/hotal-star/static/media/logo-dark.ad2c8f6c2b529ca08086fe26c59331e4.svg",
     "static/media/logo-white.svg": "/hotal-star/static/media/logo-white.b9361ef12c8ea002e790ec9dfd1f0153.svg",
-    "static/media/spa4.avif": "/hotal-star/static/media/spa4.ed42d2ab425accdc6027.avif",
-    "static/media/revicons.eot": "/hotal-star/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/hotal-star/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/hotal-star/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/therapist-6.webp": "/hotal-star/static/media/therapist-6.ff293aa98467eda4f5c9.webp",
-    "static/media/Therapist-2.webp": "/hotal-star/static/media/Therapist-2.d00c0bbe9ff895e40d28.webp",
-    "static/media/therapist-4.webp": "/hotal-star/static/media/therapist-4.070f27e82dc6f459ce47.webp",
-    "static/media/therapist-5.webp": "/hotal-star/static/media/therapist-5.f332633da77eb033763a.webp",
-    "static/media/therapist-1.webp": "/hotal-star/static/media/therapist-1.ab40cfde9500e80fc297.webp",
     "index.html": "/hotal-star/index.html",
-    "static/media/therapist-3.webp": "/hotal-star/static/media/therapist-3.e623273433ecbbb2ecb0.webp",
-    "main.337f7528.css.map": "/hotal-star/static/css/main.337f7528.css.map",
-    "main.e20ccaf0.js.map": "/hotal-star/static/js/main.e20ccaf0.js.map"
+    "main.00765f1e.css.map": "/hotal-star/static/css/main.00765f1e.css.map",
+    "main.2f3d7816.js.map": "/hotal-star/static/js/main.2f3d7816.js.map"
   },
   "entrypoints": [
-    "static/css/main.337f7528.css",
-    "static/js/main.e20ccaf0.js"
+    "static/css/main.00765f1e.css",
+    "static/js/main.2f3d7816.js"
   ]
 }
